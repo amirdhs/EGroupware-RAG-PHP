@@ -1,0 +1,56 @@
+amirrag	common	en	AmirRAG
+amirrag - semantic search	amirrag	en	AmirRAG - Semantic Search
+amirrag - index data	amirrag	en	AmirRAG - Index Data
+search query	amirrag	en	Search Query
+enter your question or search query...	amirrag	en	Enter your question or search query...
+filter by app	amirrag	en	Filter by App
+all applications	amirrag	en	All Applications
+use ai response	amirrag	en	Use AI Response
+search	amirrag	en	Search
+ai response	amirrag	en	AI Response
+search results	amirrag	en	Search Results
+application	amirrag	en	Application
+content	amirrag	en	Content
+relevance	amirrag	en	Relevance
+statistics	amirrag	en	Statistics
+total documents	amirrag	en	Total Documents
+select application	amirrag	en	Select Application
+limit (0 = all)	amirrag	en	Limit (0 = all)
+start indexing	amirrag	en	Start Indexing
+clear all index	amirrag	en	Clear All Index
+indexing results	amirrag	en	Indexing Results
+back to search	amirrag	en	Back to Search
+close	amirrag	en	Close
+menu	amirrag	en	Menu
+configuration	amirrag	en	Configuration
+site configuration	amirrag	en	Site Configuration
+index data	amirrag	en	Index Data
+addressbook	amirrag	en	Addressbook
+calendar	amirrag	en	Calendar
+infolog	amirrag	en	InfoLog
+embedding provider	amirrag	en	Embedding Provider
+embedding api key	amirrag	en	Embedding API Key
+embedding api url	amirrag	en	Embedding API URL
+embedding model	amirrag	en	Embedding Model
+llm provider	amirrag	en	LLM Provider
+llm api key	amirrag	en	LLM API Key
+llm api url	amirrag	en	LLM API URL
+llm model	amirrag	en	LLM Model
+llm temperature	amirrag	en	LLM Temperature
+llm max tokens	amirrag	en	LLM Max Tokens
+text chunk size	amirrag	en	Text Chunk Size
+text chunk overlap	amirrag	en	Text Chunk Overlap
+which embedding service to use for generating vectors	amirrag	en	Which embedding service to use for generating vectors
+api key for the embedding service	amirrag	en	API key for the embedding service
+api url for ionos embedding service (leave empty for openai)	amirrag	en	API URL for IONOS embedding service (leave empty for OpenAI)
+model name for embeddings (e.g., text-embedding-ada-002 for openai, baai/bge-m3 for ionos)	amirrag	en	Model name for embeddings (e.g., text-embedding-ada-002 for OpenAI, BAAI/bge-m3 for IONOS)
+which llm service to use for generating responses	amirrag	en	Which LLM service to use for generating responses
+api key for the llm service	amirrag	en	API key for the LLM service
+api url for ionos llm service (leave empty for openai)	amirrag	en	API URL for IONOS LLM service (leave empty for OpenAI)
+model name for llm (e.g., gpt-3.5-turbo for openai, meta-llama/llama-3.3-70b-instruct for ionos)	amirrag	en	Model name for LLM (e.g., gpt-3.5-turbo for OpenAI, meta-llama/Llama-3.3-70B-Instruct for IONOS)
+temperature for llm responses (0.0-1.0, lower is more deterministic)	amirrag	en	Temperature for LLM responses (0.0-1.0, lower is more deterministic)
+maximum tokens for llm responses	amirrag	en	Maximum tokens for LLM responses
+size of text chunks for indexing	amirrag	en	Size of text chunks for indexing
+overlap between text chunks	amirrag	en	Overlap between text chunks
+openai	amirrag	en	OpenAI
+ionos	amirrag	en	IONOS

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE overlay PUBLIC "-//EGroupware GmbH//eTemplate 2.0//EN" "https://www.egroupware.org/etemplate2.0.dtd">
+<overlay>
+	<template id="amirrag.config" template="" lang="" group="0" version="23.1">
+		<grid width="100%" class="admin-config egwGridView_grid">
+			<columns>
+				<column width="40%"/>
+				<column/>
+			</columns>
+			<rows>
+				<row>
+					<et2-description value="⚙️ Embedding Configuration" span="all" class="subHeader"></et2-description>
+				</row>
+				<row>
+					<et2-description value="Embedding Provider"></et2-description>
+					<et2-select id="newsettings[embedding_provider]">
+						<option value="openai">OpenAI</option>
+						<option value="ionos">IONOS</option>
+					</et2-select>
+				</row>
+				<row>
+					<et2-description value="Embedding API Key" statustext="Your API key for the embedding service (IONOS or OpenAI)"></et2-description>
+					<et2-password id="newsettings[embedding_api_key]" width="400px" placeholder="Enter your API key here"></et2-password>
+				</row>
+				<row>
+					<et2-description value="Embedding API URL" statustext="Base URL for the API (without /embeddings suffix)"></et2-description>
+					<et2-textbox id="newsettings[embedding_api_url]" width="400px" placeholder="https://openai.inference.de-txl.ionos.com/v1"></et2-textbox>
+				</row>
+				<row>
+					<et2-description value="Embedding Model" statustext="Model name for generating embeddings"></et2-description>
+					<et2-textbox id="newsettings[embedding_model]" width="400px" placeholder="BAAI/bge-m3"></et2-textbox>
+				</row>
+				<row>
+					<et2-description value="🤖 LLM Configuration" span="all" class="subHeader"></et2-description>
+				</row>
+				<row>
+					<et2-description value="LLM Provider"></et2-description>
+					<et2-select id="newsettings[llm_provider]">
+						<option value="openai">OpenAI</option>
+						<option value="ionos">IONOS</option>
+					</et2-select>
+				</row>
+				<row>
+					<et2-description value="LLM API Key" statustext="Your API key for the LLM service (can be same as embedding key)"></et2-description>
+					<et2-password id="newsettings[llm_api_key]" width="400px" placeholder="Enter your LLM API key here"></et2-password>
+				</row>
+				<row>
+					<et2-description value="LLM API URL" statustext="Base URL for the LLM API"></et2-description>
+					<et2-textbox id="newsettings[llm_api_url]" width="400px" placeholder="https://openai.inference.de-txl.ionos.com/v1"></et2-textbox>
+				</row>
+				<row>
+					<et2-description value="LLM Model" statustext="Model name for generating responses"></et2-description>
+					<et2-textbox id="newsettings[llm_model]" width="400px" placeholder="meta-llama/Llama-3.3-70B-Instruct"></et2-textbox>
+				</row>
+				<row>
+					<et2-description value="LLM Temperature" statustext="Controls randomness (0.0 = deterministic, 1.0 = creative)"></et2-description>
+					<et2-number id="newsettings[llm_temperature]" min="0" max="1" precision="1" placeholder="0.3"></et2-number>
+				</row>
+				<row>
+					<et2-description value="LLM Max Tokens" statustext="Maximum length of LLM responses"></et2-description>
+					<et2-number id="newsettings[llm_max_tokens]" min="100" max="4000" precision="0" placeholder="600"></et2-number>
+				</row>
+				<row>
+					<et2-description value="📝 Chunking Configuration" span="all" class="subHeader"></et2-description>
+				</row>
+				<row>
+					<et2-description value="Text Chunk Size" statustext="Size of text chunks for indexing (in characters)"></et2-description>
+					<et2-number id="newsettings[chunk_size]" min="100" placeholder="1000" precision="0"></et2-number>
+				</row>
+				<row>
+					<et2-description value="Text Chunk Overlap" statustext="Overlap between chunks (for better context)"></et2-description>
+					<et2-number id="newsettings[chunk_overlap]" min="0" placeholder="200" precision="0"></et2-number>
+				</row>
+				<row>
+					<et2-description value="📌 Important Notes" span="all" class="subHeader"></et2-description>
+				</row>
+				<row>
+					<et2-description span="all" value="1. After saving configuration, go to AmirRAG → Index Data to embed your data from Addressbook, Calendar, and InfoLog."></et2-description>
+				</row>
+				<row>
+					<et2-description span="all" value="2. Make sure your API key is valid and has access to the embedding and chat endpoints."></et2-description>
+				</row>
+				<row>
+					<et2-description span="all" value="3. For IONOS: Use the full base URL like 'https://openai.inference.de-txl.ionos.com/v1' (without /embeddings)."></et2-description>
+				</row>
+			</rows>
+		</grid>
+	</template>
+</overlay>

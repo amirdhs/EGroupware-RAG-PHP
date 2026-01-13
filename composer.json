@@ -1,0 +1,36 @@
+{
+    "name": "egroupware/amirrag",
+    "description": "A complete Retrieval-Augmented Generation (RAG) system for EGroupware with semantic search and natural language question answering.",
+    "type": "egroupware-app",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Amir",
+            "email": "amir@egroupware.org"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "openai-php/client": "^0.10.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "symfony/http-client": "^5.0|^6.0|^7.0",
+        "nyholm/psr7": "^1.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EGroupware\\Amirrag\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        },
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

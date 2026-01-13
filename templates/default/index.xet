@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE overlay PUBLIC "-//EGroupware GmbH//eTemplate 2.0//EN" "https://www.egroupware.org/etemplate2.0.dtd">
+<overlay>
+	<template id="amirrag.index" template="" lang="" group="0" version="23.1">
+		<et2-hbox class="dialogHeader">
+			<et2-button label="Index Data" id="button[indexdata]" image="reload"></et2-button>
+			<et2-button label="Configuration" id="button[config]" image="configure"></et2-button>
+		</et2-hbox>
+		<grid width="100%">
+			<columns>
+				<column width="120"/>
+				<column/>
+			</columns>
+			<rows>
+				<row>
+					<et2-description value="Search Query:"></et2-description>
+					<et2-textbox id="search_query" width="100%" placeholder="Enter your question or search query..."></et2-textbox>
+				</row>
+				<row>
+					<et2-description value="Filter by App:"></et2-description>
+					<et2-select id="app_filter" emptyLabel="All Applications"></et2-select>
+				</row>
+				<row>
+					<et2-description value="Use AI Response:"></et2-description>
+					<et2-checkbox id="use_llm"></et2-checkbox>
+				</row>
+				<row>
+					<et2-description></et2-description>
+					<et2-button label="Search" id="button[search]" image="search"></et2-button>
+				</row>
+			</rows>
+		</grid>
+		<grid width="100%">
+			<columns>
+				<column width="120"/>
+				<column/>
+			</columns>
+			<rows>
+				<row>
+					<et2-description value="AI Response:"></et2-description>
+					<et2-description id="llm_response"></et2-description>
+				</row>
+			</rows>
+		</grid>
+		<et2-description value="Search Results:"></et2-description>
+		<grid id="results_grid" width="100%">
+			<columns>
+				<column width="100"/>
+				<column/>
+				<column width="80"/>
+			</columns>
+			<rows>
+				<row class="th">
+					<et2-description value="Application"></et2-description>
+					<et2-description value="Content"></et2-description>
+					<et2-description value="Relevance"></et2-description>
+				</row>
+				<row class="row">
+					<et2-description id="${row}[app]"></et2-description>
+					<et2-description id="${row}[content]"></et2-description>
+					<et2-description id="${row}[similarity]"></et2-description>
+				</row>
+			</rows>
+		</grid>
+		<et2-hbox class="dialogFooterToolbar">
+			<et2-button label="Close" id="button[cancel]" onclick="window.close();"></et2-button>
+		</et2-hbox>
+	</template>
+</overlay>
