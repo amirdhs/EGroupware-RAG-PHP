@@ -142,9 +142,6 @@ The app automatically indexes new/modified data through hooks. You can also manu
 - **egw_amirrag_documents**: Stores document vectors and metadata
 - **egw_amirrag_index_queue**: Queue for async indexing
 
-## License
-
-GPL-3.0-or-later
 
 ## Author
 
