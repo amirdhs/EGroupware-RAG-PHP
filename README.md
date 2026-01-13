@@ -1,4 +1,4 @@
-EGroupware RAG Application
+## EGroupware RAG Application
 
 A complete Retrieval-Augmented Generation (RAG) system for EGroupware with semantic search and natural language question answering across Addressbook, Calendar, and InfoLog.
 
